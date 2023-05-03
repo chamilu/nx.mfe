@@ -1,8 +1,8 @@
-const { composePlugins, withNx } = require("@nx/webpack");
-const { withReact } = require("@nx/react");
-const { withModuleFederation } = require("@nx/react/module-federation");
+const { composePlugins, withNx } = require('@nx/webpack');
+const { withReact } = require('@nx/react');
+const { withModuleFederation } = require('@nx/react/module-federation');
 
-const baseConfig = require("./module-federation.config");
+const baseConfig = require('./module-federation.config');
 
 const prodConfig = {
   ...baseConfig,
@@ -23,7 +23,10 @@ const prodConfig = {
    *   ['app2', 'http://example.com/path/to/app2/remoteEntry.js'],
    * ]
    */
-  remotes: [],
+  remotes: [
+    ['products', './products/remoteEntry.js'],
+    ['cart', './cart/remoteEntry.js'],
+  ],
 };
 
 // Nx plugins for webpack to build config object from Nx options and context.
