@@ -24,8 +24,14 @@ const prodConfig = {
    * ]
    */
   remotes: [
-    ['products', './products/remoteEntry.js'],
-    ['cart', './cart/remoteEntry.js'],
+    [
+      'products',
+      'https://main--glittering-paletas-15ebd7.netlify.app/products/remoteEntry.js',
+    ],
+    [
+      'cart',
+      'https://main--glittering-paletas-15ebd7.netlify.app/cart/remoteEntry.js',
+    ],
   ],
 };
 
