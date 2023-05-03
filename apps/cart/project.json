@@ -12,7 +12,7 @@
         "compiler": "babel",
         "outputPath": "dist/apps/cart",
         "index": "apps/cart/src/index.html",
-        "baseHref": "/cart",
+        "baseHref": "/",
         "main": "apps/cart/src/main.ts",
         "tsConfig": "apps/cart/tsconfig.app.json",
         "assets": ["apps/cart/src/favicon.ico", "apps/cart/src/assets"],
