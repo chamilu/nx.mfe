@@ -104,7 +104,7 @@
       "executor": "nx:run-commands",
       "outputs": [],
       "options": {
-        "command": "rm -rf ./production && mkdir ./production && cp -r ./dist/apps/host/* ./production && cp -r ./dist/apps/{cart,products} ./production"
+        "command": "rm -rf production && mkdir production && cp -r dist/apps/host/* production && cp -r dist/apps/cart production && cp -r dist/apps/products production"
       }
     }
   },
