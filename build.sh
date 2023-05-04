@@ -5,6 +5,7 @@ rm -rf dist
 
 echo "Host Build"
 nx run host:build:production
+# nx run host:serve-static:production
 
 # mkdir production
 # cp -r dist/apps/host/* production

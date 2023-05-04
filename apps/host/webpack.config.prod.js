@@ -23,16 +23,27 @@ const prodConfig = {
    *   ['app2', 'http://example.com/path/to/app2/remoteEntry.js'],
    * ]
    */
+
+  // remotes: [
+  //   [
+  //     'products',
+  //     'https://main--glittering-paletas-15ebd7.netlify.app/products/remoteEntry.js',
+  //   ],
+  //   [
+  //     'cart',
+  //     'https://main--glittering-paletas-15ebd7.netlify.app/cart/remoteEntry.js',
+  //   ],
+  // ],
+
   remotes: [
-    [
-      'products',
-      'https://main--glittering-paletas-15ebd7.netlify.app/products/remoteEntry.js',
-    ],
-    [
-      'cart',
-      'https://main--glittering-paletas-15ebd7.netlify.app/cart/remoteEntry.js',
-    ],
+    ['products', '//localhost:3000/products/remoteEntry.js'],
+    ['cart', '//localhost:3000/cart/remoteEntry.js'],
   ],
+
+  // remotes: [
+  //   ['products', '//localhost:3000/products'],
+  //   ['cart', '//localhost:3000/cart'],
+  // ],
 };
 
 // Nx plugins for webpack to build config object from Nx options and context.
