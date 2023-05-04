@@ -15,7 +15,11 @@
         "baseHref": "/",
         "main": "apps/host/src/main.ts",
         "tsConfig": "apps/host/tsconfig.app.json",
-        "assets": ["apps/host/src/favicon.ico", "apps/host/src/assets", "apps/host/src/netlify.toml"],
+        "assets": [
+          "apps/host/src/favicon.ico",
+          "apps/host/src/assets",
+          "apps/host/src/netlify.toml"
+        ],
         "styles": ["apps/host/src/styles.scss"],
         "scripts": [],
         "isolatedConfig": true,
@@ -104,7 +108,7 @@
       "executor": "nx:run-commands",
       "outputs": [],
       "options": {
-        "command": "rm -rf production && mkdir production && cp -r dist/apps/host/* production && cp -r dist/apps/cart production && cp -r dist/apps/products production"
+        "command": "rm -rf production && mkdir production && cp -r dist/apps/host/* production && cp -r dist/apps/{cart,products} production"
       }
     }
   },

@@ -36,6 +36,7 @@
             }
           ],
           "optimization": true,
+          "baseHref": "/cart",
           "outputHashing": "all",
           "sourceMap": false,
           "namedChunks": false,
