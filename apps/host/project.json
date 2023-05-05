@@ -16,9 +16,9 @@
         "main": "apps/host/src/main.ts",
         "tsConfig": "apps/host/tsconfig.app.json",
         "assets": [
+          "apps/host/src/_redirects",
           "apps/host/src/favicon.ico",
-          "apps/host/src/assets",
-          "apps/host/src/netlify.toml"
+          "apps/host/src/assets"
         ],
         "styles": ["apps/host/src/styles.scss"],
         "scripts": [],

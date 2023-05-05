@@ -24,21 +24,21 @@ const prodConfig = {
    * ]
    */
 
-  // remotes: [
-  //   [
-  //     'products',
-  //     'https://main--glittering-paletas-15ebd7.netlify.app/products/remoteEntry.js',
-  //   ],
-  //   [
-  //     'cart',
-  //     'https://main--glittering-paletas-15ebd7.netlify.app/cart/remoteEntry.js',
-  //   ],
-  // ],
-
   remotes: [
-    ['products', '//localhost:3000/products/remoteEntry.js'],
-    ['cart', '//localhost:3000/cart/remoteEntry.js'],
+    [
+      'products',
+      'https://main--glittering-paletas-15ebd7.netlify.app/products/remoteEntry.js',
+    ],
+    [
+      'cart',
+      'https://main--glittering-paletas-15ebd7.netlify.app/cart/remoteEntry.js',
+    ],
   ],
+
+  // remotes: [
+  //   ['products', '//localhost:3000/products/remoteEntry.js'],
+  //   ['cart', '//localhost:3000/cart/remoteEntry.js'],
+  // ],
 
   // remotes: [
   //   ['products', '//localhost:3000/products'],
